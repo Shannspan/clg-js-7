@@ -9,7 +9,10 @@ connectedCallback () {
     this.innerHTML = `
     <header>
     <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
-    A FRINGE OF REEF
+    
+    <div class="title-main">
+    <div class="title-cutout">A FRINGE OF REEF</div>
+    </div>
     <nav>
     <div class="topnav">
     <a class="navlinks" href="#home">Home</a>
