@@ -8,8 +8,8 @@ body {
     font-family: 'Schoolbell', cursive;   
     font-size: 1.5em;
     color:#0e0e62;
-    display: flex;
-    flex-flow: column wrap;
+    /*display: flex;
+    flex-flow: column wrap;*/
     margin: 0;    
 }
 
@@ -17,6 +17,7 @@ header {
     display: flex;
     flex-direction: column;
 }
+
 a:link {
     color: #0e0e62;
 }
@@ -70,7 +71,7 @@ p {
 
 .title-cutout {
   background-color: #D5D3D9;
-  color: black;
+  color:  #355B97;
   font-size: 1.5em; 
   font-weight: bold;
   margin: 0 auto; 
@@ -105,7 +106,7 @@ p {
 
 #main {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;    
     max-width: 20em;
     padding-left: 2em;
@@ -234,7 +235,7 @@ p {
 
     #main {
         display: flex;
-        flex-flow: wrap-reverse row;
+        flex-direction: column;
         max-width: 100%;
         padding: 2em;
     }
