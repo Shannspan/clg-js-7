@@ -149,7 +149,11 @@ p {
     border-radius: 50%;     
     margin: 2em; 
 }
-
+#fave-beach {
+    color: #320E3B;
+    font-size: 1em;
+    text-align: center;
+}
 .wrapper {   
     border: none;
     margin: 1em;
