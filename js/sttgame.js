@@ -138,3 +138,24 @@ function poppyRestart() {
 }
 
 restartButton.addEventListener("click", poppyRestart);
+
+//Object constructor 
+
+// Object constructor function 
+function beachPick(beach, location, type, vehicle) {
+  this.name = beach;
+  this.location = location;
+  this.type = type;
+  this.vehicle = vehicle;
+  this.orientation = function() {
+    return this.name + ", " + this.location + "."  };
+}
+
+// Create a new beachPick object (myFave)
+const myFave = new beachPick("Turtle Cliffs", "5 km South of Coral Bay", "Very soft sand, driving on beach is not recommended", "4WD required");
+//check the new object has been made
+console.log(myFave);
+
+// Fetch data from new object and change page output 
+document.getElementById("fave-beach").innerHTML =
+"My favourite beach on the coral coast of Western Australia is " + myFave.orientation(); 
