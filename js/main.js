@@ -1,14 +1,13 @@
-//Manipulating the DOM to change style - using getElementById, querySelector, eventListener
 document.getElementById("marine-park").style.backgroundColor = " #D5D3D9";
 
 wrappers = document.querySelector(".wrapper");
 
-wrappers.style.backgroundColor = "#BF9CA4";
+wrappers.style.backgroundColor = "#cca2ab";
+
 
 const gameTitle = document.getElementById("game-title");
 
 function popShell() {
-  //alert ("Hey there!");
   gameTitle.style.color = "#355B97";
   gameTitle.innerHTML = "Let's play Shell Tac Toe!"
 }
@@ -18,10 +17,10 @@ gameTitle.addEventListener("mouseover",popShell);
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 
-ctx.fillStyle = "plum";
+ctx.fillStyle = "#cca2ab";
 ctx.fillRect(10, 10, 150, 100);
 
-//Function for Index page Select your favourite shell - also manipulating the DOM to reveal text after user makes a selection via variables, querySelectors and eventListener & following function
+//Function for Index page Select favourite shell
 
 const select = document.querySelector('select');
 const para = document.querySelector('p');
@@ -44,5 +43,24 @@ function setShell() {
   }
 }
 
- 
+//declare an object literal using properties only
+const beachProfile = {
+  name: "Turtle Cliffs",
+  location: "5 km South of Coral Bay",
+  type: "Very soft sand, driving on beach is not recommended",
+  vehicle: "4WD required"
+};
+console.log(beachProfile.location);
+
+//declare an object literal using properties and method
+ const beachProfile2 = {
+  name: "Five Fingers Reef",
+  location: "4.5 km South of Coral Bay",
+  type: "alternating hard and soft sand",
+  vehicle: "4WD is required",
+  beach: function() {console.log(this.name + " is " + this.location);
+ }
+ };
+//Fetch data - sent to console as per method
+ beachProfile2.beach();
 

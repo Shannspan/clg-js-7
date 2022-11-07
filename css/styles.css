@@ -16,10 +16,11 @@ body {
 header {
     display: flex;
     flex-direction: column;
+    border-bottom: none;
 }
 
 a:link {
-    color: #0e0e62;
+    color: #976671;
 }
 
 a:visited {
@@ -31,12 +32,13 @@ a:active {
 }
 
 a:hover {
-    box-shadow: inset 3em 0 0 0 #D5D3D9;
+    color: #9a71a3;
+   
 }
 /*!!Can I make a unique cursor using a photo? or find a shell shaped one? */
 
 article {
-    padding: 1em;
+    padding: 0.5em;    
 }
 
 aside {
@@ -56,8 +58,6 @@ h2 {
     font-size: 1em;
     padding: 1em;
 }
-
-
 
 p {
     text-align: center;
@@ -111,6 +111,18 @@ p {
     max-width: 20em;
     padding-left: 2em;
 }
+#selector {
+    display: flex;
+    flex-direction: column;
+}
+#shell-choice {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1em;
+    color: #320E3B;
+    text-align: center;
+    border: none;
+    margin: 1em;
+}
 
 #my-footer {    
     color: #0e0e62;
@@ -138,10 +150,11 @@ p {
     margin: 2em; 
 }
 
-#shell-choice {   
+.wrapper {   
     border: none;
-    margin: 2em;
+    margin: 1em;
     padding: 1em;
+    text-align: center;
 }
 
 /*game styling*/
